@@ -27,7 +27,7 @@ const CARD_COUNT = 54
 const FirstsPool = new WordPool(['Mariam', 'Fatema', 'Jouri', 'Sarah', 'Leanne', 'Mohammed', 'Ahmad', 'Omar', 'Ali', 'Youssef', 'Isabella', 'Emma', 'Olivia', 'Catalina', 'Martina', 'Benjamin', 'Felipe', 'Bautista', 'Mateo', 'Valentino', 'Olivia', 'Charlotte', 'Isla', 'Ava', 'Mia', 'Oliver', 'Noah', 'William', 'Jack', 'Jackson', 'Emma', 'Mila', 'Jade', 'Luna', 'Louise', 'Raphaël', 'Liam', 'Lucas', 'Noah', 'Léo', 'Saanvi', 'Aadya', 'Kiara', 'Diya', 'Pihu', 'Muhammad', 'Reyansh', 'Aarav', 'Atharv', 'Vivaan', 'Siyabonga', 'Melokuhle', 'Lethabo', 'Banele', 'Samkelo', 'Amahle', 'Minenhle', 'Thandolwethu', 'Melokuhle', 'Lesedi'])
 const SursPool = new WordPool(['Rasulov', 'Zhang', 'Bishwas', 'Saito', 'Kwon', 'Gurung', 'Herath', 'Ozdemir', 'Nguyen', 'Sargsyan', 'Reiter', 'Mihaylov', 'Jukic', 'Olsen', 'Durand', 'Roux', 'Juhasz', 'Colombo', 'Attard', 'De Wit', 'Correia', 'Smith', 'Wilson', 'Williams', 'Brown', 'Taylor', 'Jones', 'Singh', 'Wang', 'Anderson', 'Lee', 'Fernandez', 'Rodríguez', 'González', 'García', 'López', 'Ramos', 'Núnez', 'Rossi', 'Silva', 'Méndez'])
 
-const JobsPool = {'Chest X-ray' : ['A','D'], 'Hip X-ray' : ['D'], 'Limb X-ray' : ['D'], 'Abdominal X-ray' : ['D'], 'Lumbar Puncture' : ['A'], 'Electrocardiogram' : ['B','C'], 'Take bloods' : ['A','B','C','D'], 'Send a urine sample' : ['A','B','C','D'], 'Send a sputum sample' : ['A','B','C','D'], 'Send a stool sample' : ['A','B','C','D'], 'Take and send a swab' : ['A','B','C','D'], 'Document allergies' : ['A','B','C','D'], 'Place a cannula' : ['A','B','C'], 'Place a catheter' : ['A','C'], 'Place a chest drain' : ['A'], 'Place an abdominal drain' : ['A'], 'Give IV fluids' : ['C'], 'Give oxygen' : ['B','C'], 'Give electrolytes' : ['B','C'], 'Give antiarrhythmics' : ['B','C'], 'Give diuretics' : ['B','C'], 'Give antibiotics' : ['B','C'], 'Give nasal medications' : ['C'], 'Give pain relief' : ['C'], 'Sedate the patient' : ['A','B'], 'Intubate the patient' : ['A'], 'CT Scan' : ['D'], 'MRI Scan' : ['D'], 'Ultrasound Scan' : ['A','D'], 'Cardioversion' : ['B'], 'Thrombolysis' : ['B'], 'Prep for Theatre' : ['C'], 'Neurovascular Status' : ['B','C'], 'Wound Dressing' : ['C'], 'Patient Education' : ['A','B','C','D'], 'Prescribe Medications' : ['A','B'], 'Review Medications' : ['A','B'], 'Write Fluid Orders' : ['A','B'], 'Manual Handling' : ['C','D']}
+const JobsPool = {'Get chest x-ray' : ['A','D'], 'Get hip x-ray' : ['D'], 'Get limb x-ray' : ['D'], 'Get abdomen X-ray' : ['D'], 'Do a lumbar puncture' : ['A'], 'Get electrocardiogram' : ['B','C'], 'Take bloods' : ['A','B','C','D'], 'Send a urine sample' : ['A','B','C','D'], 'Send a sputum sample' : ['A','B','C','D'], 'Send a stool sample' : ['A','B','C','D'], 'Take and send a swab' : ['A','B','C','D'], 'Document allergies' : ['A','B','C','D'], 'Place a cannula' : ['A','B','C'], 'Place a catheter' : ['A','C'], 'Place a chest drain' : ['A'], 'Place an abdominal drain' : ['A'], 'Give IV fluids' : ['C'], 'Give oxygen' : ['B','C'], 'Give electrolytes' : ['B','C'], 'Give antiarrhythmics' : ['B','C'], 'Give diuretics' : ['B','C'], 'Give antibiotics' : ['B','C'], 'Give nasal medications' : ['C'], 'Give pain relief' : ['C'], 'Sedate the patient' : ['A','B'], 'Intubate the patient' : ['A'], 'Get a CT Scan' : ['D'], 'Get an MRI Scan' : ['D'], 'Get an ultrasound' : ['A','D'], 'Cardiovert the patient' : ['B'], 'Thrombolyse the patient' : ['B'], 'Prep for theatre' : ['C'], 'Assess consciousness' : ['B','C'], 'Dress wounds' : ['C'], 'Educate the patient' : ['A','B','C','D'], 'Prescribe medications' : ['A','B'], 'Review medications' : ['A','B'], 'Document medications' : ['A','B'], 'Move the patient' : ['C','D']}
 
 const ImagePool = new WordPool(['injury.jpg', 'sick.jpg'])
 
@@ -67,17 +67,17 @@ function findTasksForRole(role, previous) {
    for (let x of arr) { if (!arr2.some(y => y == x)) { final.push(x); }}
   } else if (role.length == 4) {
     for (var k in JobsPool) {
-      if (JobsPool[k] == 'A,B,C,D') {
+      if (JobsPool[k] == "A,B,C,D") {
         final.push(k)
-       }
+      }
     }
   }
 
   final = shuffle(final)
   for (var k in previous) {
     for (var i in final)
-      if (previous[k][0] == i) {
-        final.pop(i)
+      if (previous[k][0] == final[i]) {
+        final.splice(i,1)
       }
     }
   result = final.pop()
