@@ -19,6 +19,7 @@ const MIN_JOBS = 1
 const MAX_JOBS = 3
 const TRIAGE_CATEGORIES = ['1', '2', '3', '4', '5']
 const TRIAGE_COLORS = ['#FFFFFF', '#000000', '#DE4768', '#F2A040', '#0AB45A', '#2A74F6']
+const ROLE_COLORS = {'ABCD':TRIAGE_COLORS[0], 'A':TRIAGE_COLORS[1], 'B':TRIAGE_COLORS[2], 'C':TRIAGE_COLORS[3], 'D':TRIAGE_COLORS[4]}
 const JOINS = [' ', ' THEN', ' AND']
 
 const CARD_COUNT = 54
@@ -112,10 +113,6 @@ function createJobList() {
   }
 }
 
-function makePlausibleName() {  
-  return FirstsPool.getWord() + ' ' + SursPool.getWord()
-}
-
 // Takes 2-4 jobs and creates a sequence from them, joined using AND, THEN, WHILE
 function createJobSequence(jobs) {
   let result = []
@@ -131,12 +128,46 @@ function createJobSequence(jobs) {
   return result
 }
 
+function findRoles(jobList) {
+  // Take a list of jobs, pull the roles out and return an array of colours for the icons of each task
+  let result = [['#FFFFFF','#FFFFFF','#FFFFFF'],['#FFFFFF','#FFFFFF','#FFFFFF'],['#FFFFFF','#FFFFFF','#FFFFFF']] //[fir, sec, out] x3 tasks
+
+  for (var i in jobList) {
+    if (jobList[i][2] == 'ABCD') {
+      result[i] = [ROLE_COLORS["ABCD"], '#FFFFFF', "#000000"]
+    } else {
+      if (jobList[i][2].length == 1) {
+        result[i][1] = "#FFFFFF"
+      }
+
+      for (let l = 0; l < jobList[i][2].length; l++) {
+        if (jobList[i][2].charAt(l)) {
+          result[i][l] = ROLE_COLORS[ jobList[i][2].charAt(l) ]
+        } else {result[i][l] = "#FFFFFF"}
+        
+      }
+      result[i][2] = "#FFFFFF"
+    }
+  }
+
+  console.log("r[0]: " + result[0])
+  console.log("r[1]: " + result[1])
+  console.log("r[2]: " + result[2])
+
+  return result
+}
+
+function makePlausibleName() {  
+  return FirstsPool.getWord() + ' ' + SursPool.getWord()
+}
+
 function createPatient(jobs, triage) {
   return {
     name: makePlausibleName(),
     triage,
     jobs,
-    hex: TRIAGE_COLORS[triage]
+    hex: TRIAGE_COLORS[triage],
+    role: findRoles(jobs),
   }
 }
 
