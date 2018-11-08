@@ -73,9 +73,9 @@ function findTasksForRole(role, previous) {
   }
 
   final = shuffle(final)
-  for (var key in previous) {
+  for (var k in previous) {
     for (var i in final)
-      if (key == i) {
+      if (previous[k][0] == i) {
         final.pop(i)
       }
     }
