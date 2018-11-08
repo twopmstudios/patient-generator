@@ -18,22 +18,16 @@ const ROLES = ['A', 'B', 'C', 'D']
 const MIN_JOBS = 1
 const MAX_JOBS = 3
 const TRIAGE_CATEGORIES = ['1', '2', '3', '4', '5']
-const JOINS = [',', ' THEN', ' AND']
+const JOINS = ['-----', ' THEN', ' AND']
 
-const CARD_COUNT = 24 // 54
+const CARD_COUNT = 54
 
 const FirstsPool = new WordPool(['Mariam', 'Fatema', 'Jouri', 'Sarah', 'Leanne', 'Mohammed', 'Ahmad', 'Omar', 'Ali', 'Youssef', 'Isabella', 'Emma', 'Olivia', 'Catalina', 'Martina', 'Benjamin', 'Felipe', 'Bautista', 'Mateo', 'Valentino', 'Olivia', 'Charlotte', 'Isla', 'Ava', 'Mia', 'Oliver', 'Noah', 'William', 'Jack', 'Jackson', 'Emma', 'Mila', 'Jade', 'Luna', 'Louise', 'Raphaël', 'Liam', 'Lucas', 'Noah', 'Léo', 'Saanvi', 'Aadya', 'Kiara', 'Diya', 'Pihu', 'Muhammad', 'Reyansh', 'Aarav', 'Atharv', 'Vivaan', 'Siyabonga', 'Melokuhle', 'Lethabo', 'Banele', 'Samkelo', 'Amahle', 'Minenhle', 'Thandolwethu', 'Melokuhle', 'Lesedi'])
 const SursPool = new WordPool(['Rasulov', 'Zhang', 'Bishwas', 'Saito', 'Kwon', 'Gurung', 'Herath', 'Ozdemir', 'Nguyen', 'Sargsyan', 'Reiter', 'Mihaylov', 'Jukic', 'Olsen', 'Durand', 'Roux', 'Juhasz', 'Colombo', 'Attard', 'De Wit', 'Correia', 'Smith', 'Wilson', 'Williams', 'Brown', 'Taylor', 'Jones', 'Singh', 'Wang', 'Anderson', 'Lee', 'Fernandez', 'Rodríguez', 'González', 'García', 'López', 'Ramos', 'Núnez', 'Rossi', 'Silva', 'Méndez'])
 
-const JobsPool = {'Chest X-ray' : ['A','D'], 'Hip X-ray' : ['D'], 'Limb X-ray' : ['D'], 'Abdominal X-ray' : ['D'], 'Lumbar Puncture' : ['A'], 'Electrocardiogram' : ['B','C'], 'Take bloods' : ['A','B','C','D'], 'Send a urine sample' : ['A','B','C','D'], 'Send a sputum sample' : ['A','B','C','D'], 'Send a stool sample,' : ['A','B','C','D'], 'Take and send a swab' : ['A','B','C','D'], 'Document allergies' : ['A','B','C','D'], 'Place a cannula' : ['A','B','C'], 'Place a catheter' : ['A','C'], 'Place a chest drain' : ['A'], 'Place an abdominal drain' : ['A'], 'Give IV fluids' : ['C'], 'Give oxygen' : ['B','C'], 'Give electrolytes' : ['B','C'], 'Give antiarrhythmics' : ['B','C'], 'Give diuretics' : ['B','C'], 'Give antibiotics' : ['B','C'], 'Give nasal medications' : ['C'], 'Give pain relief' : ['C'], 'Sedate the patient' : ['A','B'], 'Intubate the patient' : ['A'], 'CT Scan' : ['D'], 'MRI Scan' : ['D'], 'Ultrasound Scan' : ['A','D'], 'Cardioversion' : ['B'], 'Thrombolysis' : ['B'], 'Prep for Theatre' : ['C'], 'Neurovascular Status' : ['B','C'], 'Wound Dressing' : ['C'], 'Patient Education' : ['A','B','C','D'], 'Prescribe Medications' : ['A','B'], 'Review Medications' : ['A','B'], 'Write Fluid Orders' : ['A','B'], 'Manual Handling' : ['C','D']}
+const JobsPool = {'Chest X-ray' : ['A','D'], 'Hip X-ray' : ['D'], 'Limb X-ray' : ['D'], 'Abdominal X-ray' : ['D'], 'Lumbar Puncture' : ['A'], 'Electrocardiogram' : ['B','C'], 'Take bloods' : ['A','B','C','D'], 'Send a urine sample' : ['A','B','C','D'], 'Send a sputum sample' : ['A','B','C','D'], 'Send a stool sample' : ['A','B','C','D'], 'Take and send a swab' : ['A','B','C','D'], 'Document allergies' : ['A','B','C','D'], 'Place a cannula' : ['A','B','C'], 'Place a catheter' : ['A','C'], 'Place a chest drain' : ['A'], 'Place an abdominal drain' : ['A'], 'Give IV fluids' : ['C'], 'Give oxygen' : ['B','C'], 'Give electrolytes' : ['B','C'], 'Give antiarrhythmics' : ['B','C'], 'Give diuretics' : ['B','C'], 'Give antibiotics' : ['B','C'], 'Give nasal medications' : ['C'], 'Give pain relief' : ['C'], 'Sedate the patient' : ['A','B'], 'Intubate the patient' : ['A'], 'CT Scan' : ['D'], 'MRI Scan' : ['D'], 'Ultrasound Scan' : ['A','D'], 'Cardioversion' : ['B'], 'Thrombolysis' : ['B'], 'Prep for Theatre' : ['C'], 'Neurovascular Status' : ['B','C'], 'Wound Dressing' : ['C'], 'Patient Education' : ['A','B','C','D'], 'Prescribe Medications' : ['A','B'], 'Review Medications' : ['A','B'], 'Write Fluid Orders' : ['A','B'], 'Manual Handling' : ['C','D']}
 
 const ImagePool = new WordPool(['injury.jpg', 'sick.jpg'])
-
-const JobsA = new WordPool(['Chest X-ray', 'Lumbar Puncture', 'Take bloods', 'Send a urine sample', 'Send a sputum sample', 'Send a stool sample', 'Take and send a swab', 'Document allergies', 'Place a cannula', 'Place a catheter', 'Place a chest drain', 'Place an abdominal drain', 'Sedate the patient', 'Intubate the patient', 'Ultrasound Scan', 'Patient Education', 'Prescribe Medications', 'Review Medications', 'Write Fluid Orders',])
-const JobsB = new WordPool(['Electrocardiogram', 'Take bloods', 'Send a urine sample', 'Send a sputum sample', 'Send a stool sample', 'Take and send a swab', 'Document allergies', 'Place a cannula', 'Give oxygen', 'Give electrolytes', 'Give antiarrhythmics', 'Give diuretics', 'Give antibiotics', 'Sedate the patient', 'Cardioversion', 'Thrombolysis', 'Neurovascular Status', 'Patient Education', 'Prescribe Medications', 'Review Medications', 'Write Fluid Orders'])
-const JobsC = new WordPool(['Electrocardiogram', 'Take bloods', 'Send a urine sample', 'Send a sputum sample', 'Send a stool sample', 'Take and send a swab', 'Document allergies', 'Place a cannula', 'Place a catheter', 'Give IV fluids', 'Give oxygen', 'Give electrolytes', 'Give antiarrhythmics', 'Give diuretics', 'Give antibiotics', 'Give nasal medications', 'Give pain relief', 'Prep for Theatre', 'Neurovascular Status', 'Wound Dressing', 'Patient Education', 'Manual Handling'])
-const JobsD = new WordPool(['Chest X-ray', 'Hip X-ray', 'Limb X-ray', 'Abdominal X-ray', 'Take bloods', 'Send a urine sample', 'Send a sputum sample', 'Send a stool sample', 'Take and send a swab', 'Document allergies', 'CT Scan', 'MRI Scan', 'Ultrasound Scan', 'Patient Education', 'Manual Handling'])
-const JobsAll = new WordPool(['Take bloods', 'Send a urine sample', 'Send a sputum sample', 'Send a stool sample', 'Take and send a swab', 'Document allergies', 'Patient Education'])
 
 function shuffle(a) {
   for (let i = a.length - 1; i > 0; i--) {
@@ -43,7 +37,7 @@ function shuffle(a) {
   return a;
 }
 
-function findTasksForRole(role) {
+function findTasksForRole(role, previous) {
   let arr = []
   let final = []
   //console.log("length:" + role.length + " 1: " +role[0] + " 2: " + role[1] + " 3: " +role[2] + " 4: " + role[3])
@@ -78,6 +72,12 @@ function findTasksForRole(role) {
   }
 
   final = shuffle(final)
+  for (var key in previous) {
+    for (var i in final)
+      if (key == i) {
+        final.pop(i)
+      }
+    }
   result = final.pop()
   return result
 }
@@ -117,23 +117,30 @@ function makePlausibleName() {
 
 // Takes 2-4 jobs and creates a sequence from them, joined using AND, THEN, WHILE
 function createJobSequence(jobs) {
-  let result = ''
+  let result = []
+  let resultDict = {}
+
+  //Rewrite this to pass jobs[i] and jobs[jobs.length-1] as Array of [Task, Join, Roles] not Object
 
   for (let i = 0; i < jobs.length - 1; i++) {
-    result += findTasksForRole(jobs[i]) + getRandomListEntry(JOINS) + '\n'
+    resultDict[findTasksForRole(jobs[i], resultDict)] = getRandomListEntry(JOINS)
+    //result += findTasksForRole(jobs[i], result) + getRandomListEntry(JOINS) + '\n'
   }
+  resultDict[findTasksForRole(jobs[jobs.length - 1], resultDict)] =  ""
+  //result += findTasksForRole(jobs[jobs.length - 1], result)
 
-  result += findTasksForRole(jobs[jobs.length - 1])
+  for (var key in resultDict) {
+    result.push([key, resultDict[key]])
+  }
 
   return result
 }
 
-function createPatient(jobSeq, triage) {
-
+function createPatient(jobs, triage) {
   return {
     name: makePlausibleName(),
     triage,
-    jobs: jobSeq.split('\n')
+    jobs
   }
 }
 
