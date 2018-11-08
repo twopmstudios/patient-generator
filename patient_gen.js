@@ -18,7 +18,8 @@ const ROLES = ['A', 'B', 'C', 'D']
 const MIN_JOBS = 1
 const MAX_JOBS = 3
 const TRIAGE_CATEGORIES = ['1', '2', '3', '4', '5']
-const JOINS = ['-----', ' THEN', ' AND']
+const TRIAGE_COLORS = ['#FFFFFF', '#000000', '#DE4768', '#F2A040', '#0AB45A', '#2A74F6']
+const JOINS = [' ', ' THEN', ' AND']
 
 const CARD_COUNT = 54
 
@@ -118,20 +119,14 @@ function makePlausibleName() {
 // Takes 2-4 jobs and creates a sequence from them, joined using AND, THEN, WHILE
 function createJobSequence(jobs) {
   let result = []
-  let resultDict = {}
-
-  //Rewrite this to pass jobs[i] and jobs[jobs.length-1] as Array of [Task, Join, Roles] not Object
 
   for (let i = 0; i < jobs.length - 1; i++) {
-    resultDict[findTasksForRole(jobs[i], resultDict)] = getRandomListEntry(JOINS)
+
+    result.push([findTasksForRole(jobs[i], result), getRandomListEntry(JOINS), jobs[i]])
     //result += findTasksForRole(jobs[i], result) + getRandomListEntry(JOINS) + '\n'
   }
-  resultDict[findTasksForRole(jobs[jobs.length - 1], resultDict)] =  ""
+  result.push([findTasksForRole(jobs[jobs.length - 1], result), "", jobs[jobs.length - 1]])
   //result += findTasksForRole(jobs[jobs.length - 1], result)
-
-  for (var key in resultDict) {
-    result.push([key, resultDict[key]])
-  }
 
   return result
 }
@@ -140,7 +135,8 @@ function createPatient(jobs, triage) {
   return {
     name: makePlausibleName(),
     triage,
-    jobs
+    jobs,
+    hex: TRIAGE_COLORS[triage]
   }
 }
 
