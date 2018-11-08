@@ -19,8 +19,8 @@ const MIN_JOBS = 1
 const MAX_JOBS = 3
 const TRIAGE_CATEGORIES = ['1', '2', '3', '4', '5']
 const TRIAGE_COLORS = ['#FFFFFF', '#000000', '#DE4768', '#F2A040', '#0AB45A', '#2A74F6']
-const ROLE_COLORS = {'ABCD':TRIAGE_COLORS[0], 'A':TRIAGE_COLORS[1], 'B':TRIAGE_COLORS[2], 'C':TRIAGE_COLORS[3], 'D':TRIAGE_COLORS[4]}
-const JOINS = [' ', ' THEN', ' AND']
+const ROLE_COLORS = {'ABCD':TRIAGE_COLORS[0], 'A':TRIAGE_COLORS[1], 'B':TRIAGE_COLORS[2], 'C':TRIAGE_COLORS[4], 'D':TRIAGE_COLORS[5]}
+const JOINS = ['~~~', ' THEN', ' AND']
 
 const CARD_COUNT = 54
 
@@ -144,15 +144,10 @@ function findRoles(jobList) {
         if (jobList[i][2].charAt(l)) {
           result[i][l] = ROLE_COLORS[ jobList[i][2].charAt(l) ]
         } else {result[i][l] = "#FFFFFF"}
-        
       }
-      result[i][2] = "#FFFFFF"
+      result[i][2] = result[i][0]
     }
   }
-
-  console.log("r[0]: " + result[0])
-  console.log("r[1]: " + result[1])
-  console.log("r[2]: " + result[2])
 
   return result
 }
@@ -167,7 +162,7 @@ function createPatient(jobs, triage) {
     triage,
     jobs,
     hex: TRIAGE_COLORS[triage],
-    role: findRoles(jobs),
+    roles: findRoles(jobs),
   }
 }
 
