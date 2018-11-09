@@ -1,0 +1,26 @@
+<svg width="196" height="269" viewBox="0 0 196 269" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<rect width="195.679" height="268.043" fill="white"/>
+<rect x="8" y="8" width="180" height="252" rx="16" stroke="#DEDEDE" stroke-width="16"/>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Inconsolata" font-size="6" letter-spacing="0em"><tspan x="25" y="247.154">&#xa9; TwoPM Studios 2018</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Inconsolata" font-size="6" letter-spacing="0em"><tspan x="150" y="247.154">Triage!</tspan></text>
+<circle cx="164" cy="31" r="11" fill="#DEDEDE"/>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Bitter" font-size="14" font-weight="bold" letter-spacing="0em" text-anchor="middle"><tspan x="164" y="36.26">{{triage}}</tspan></text>
+<path d="M55.7399 23.5413L52 12H145L140.705 23.7203C139.984 25.6902 138.109 27 136.011 27H60.4964C58.3289 27 56.4081 25.6034 55.7399 23.5413Z" fill="#DEDEDE"/>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Inconsolata" font-size="8" font-weight="bold" letter-spacing="0em" text-anchor="middle"><tspan x="98" y="22.8711">SPECIAL EVENT</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="14" font-weight="bold" letter-spacing="0em" text-anchor="middle"><tspan x="98" y="103">{{name}}</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Inconsolata" font-size="10" letter-spacing="0em" text-anchor="middle"><tspan x="98" y="126">{{jobs.0}}</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Inconsolata" font-size="10" letter-spacing="0em" text-anchor="middle"><tspan x="98" y="135">{{jobs.1}}</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Inconsolata" font-size="10" letter-spacing="0em" text-anchor="middle"><tspan x="98" y="144">{{jobs.2}}</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Inconsolata" font-size="10" letter-spacing="0em" text-anchor="middle"><tspan x="98" y="153">{{jobs.3}}</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Inconsolata" font-size="10" letter-spacing="0em" text-anchor="middle"><tspan x="98" y="162">{{jobs.4}}</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Inconsolata" font-size="10" letter-spacing="0em" text-anchor="middle"><tspan x="98" y="171">{{jobs.5}}</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Inconsolata" font-size="10" letter-spacing="0em" text-anchor="middle"><tspan x="98" y="180">{{jobs.6}}</tspan></text>
+<line x1="48" y1="112" x2="149" y2="112" stroke="#C4C4C4"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="195.679" height="268.043" fill="white"/>
+</clipPath>
+</defs>
+</svg>
