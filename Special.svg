@@ -7,29 +7,26 @@
 <g mask="url(#mask0)">
 <rect width="177.39" height="135.756" transform="matrix(-1 0 0 1 185 6.51221)" fill="url(#pattern0)"/>
 </g>
-<rect x="8" y="8" width="180" height="252" rx="16" stroke="#36753B" stroke-width="16"/>
+<rect x="8" y="8" width="180" height="252" rx="16" stroke="{{special.1}}" stroke-width="16"/>
 <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Inconsolata" font-size="10" letter-spacing="0em"><tspan x="52" y="151.59">{{jobs.0.0}}</tspan></text>
 <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Inconsolata" font-size="10" letter-spacing="0em"><tspan x="52" y="188.59">{{jobs.1.0}}</tspan></text>
 <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Inconsolata" font-size="10" letter-spacing="0em"><tspan x="52" y="225.59">{{jobs.2.0}}</tspan></text>
-<path d="M28.8889 147.222C30.6002 147.222 32 145.822 32 144.111C32 142.4 30.6002 141 28.8889 141C27.1776 141 25.7778 142.4 25.7778 144.111C25.7778 145.822 27.1776 147.222 28.8889 147.222ZM28.8889 148C26.8278 148 25 149.05 25 151.111V155H32.7778V151.111C32.7778 149.05 30.9499 148 28.8889 148Z" fill="#DE4768"/>
-<path d="M38.8889 147.222C40.6002 147.222 42 145.822 42 144.111C42 142.4 40.6002 141 38.8889 141C37.1776 141 35.7778 142.4 35.7778 144.111C35.7778 145.822 37.1776 147.222 38.8889 147.222ZM38.8889 148C36.8278 148 35 149.05 35 151.111V155H42.7778V151.111C42.7778 149.05 40.9499 148 38.8889 148Z" fill="#2A74F6"/>
-<path d="M33.8889 184.222C35.6002 184.222 37 182.822 37 181.111C37 179.4 35.6002 178 33.8889 178C32.1776 178 30.7778 179.4 30.7778 181.111C30.7778 182.822 32.1776 184.222 33.8889 184.222ZM33.8889 185C31.8278 185 30 186.05 30 188.111V192H37.7778V188.111C37.7778 186.05 35.9499 185 33.8889 185Z" fill="#0AB45A"/>
-<line x1="21" y1="167.5" x2="175" y2="167.5" stroke="#C4C4C4"/>
-<rect x="76" y="163" width="39" height="9" fill="white"/>
+<path d="M28.8889 147.222C30.6002 147.222 32 145.822 32 144.111C32 142.4 30.6002 141 28.8889 141C27.1776 141 25.7778 142.4 25.7778 144.111C25.7778 145.822 27.1776 147.222 28.8889 147.222ZM28.8889 148C26.8278 148 25 149.05 25 151.111V155H32.7778V151.111C32.7778 149.05 30.9499 148 28.8889 148Z" fill="{{roles.0.0}}" stroke="{{roles.0.2}}"/>
+<path d="M38.8889 147.222C40.6002 147.222 42 145.822 42 144.111C42 142.4 40.6002 141 38.8889 141C37.1776 141 35.7778 142.4 35.7778 144.111C35.7778 145.822 37.1776 147.222 38.8889 147.222ZM38.8889 148C36.8278 148 35 149.05 35 151.111V155H42.7778V151.111C42.7778 149.05 40.9499 148 38.8889 148Z" fill="{{roles.0.1}}" stroke="{{roles.0.1}}"/>
+<path d="M28.8889 184.222C30.6002 184.222 32 182.822 32 181.111C32 179.4 30.6002 178 28.8889 178C27.1776 178 25.7778 179.4 25.7778 181.111C25.7778 182.822 27.1776 184.222 28.8889 184.222ZM28.8889 185C26.8278 185 25 186.05 25 188.111V192H32.7778V188.111C32.7778 186.05 30.9499 185 28.8889 185Z" fill="{{roles.1.0}}" stroke="{{roles.1.2}}"/>
+<path d="M38.8889 184.222C40.6002 184.222 42 182.822 42 181.111C42 179.4 40.6002 178 38.8889 178C37.1776 178 35.7778 179.4 35.7778 181.111C35.7778 182.822 37.1776 184.222 38.8889 184.222ZM38.8889 185C36.8278 185 35 186.05 35 188.111V192H42.7778V188.111C42.7778 186.05 40.9499 185 38.8889 185Z" fill="{{roles.1.1}}" stroke="{{roles.1.1}}"/>
+<path d="M28.8889 222.222C30.6002 222.222 32 220.822 32 219.111C32 217.4 30.6002 216 28.8889 216C27.1776 216 25.7778 217.4 25.7778 219.111C25.7778 220.822 27.1776 222.222 28.8889 222.222ZM28.8889 223C26.8278 223 25 224.05 25 226.111V230H32.7778V226.111C32.7778 224.05 30.9499 223 28.8889 223Z" fill="{{roles.2.0}}" stroke="{{roles.2.2}}"/>
+<path d="M38.8889 222.222C40.6002 222.222 42 220.822 42 219.111C42 217.4 40.6002 216 38.8889 216C37.1776 216 35.7778 217.4 35.7778 219.111C35.7778 220.822 37.1776 222.222 38.8889 222.222ZM38.8889 223C36.8278 223 35 224.05 35 226.111V230H42.7778V226.111C42.7778 224.05 40.9499 223 38.8889 223Z" fill="{{roles.2.1}}" stroke="{{roles.2.1}}"/>
 <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Inconsolata" font-size="8" font-weight="bold" letter-spacing="0em" text-anchor="middle"><tspan x="98" y="169.871">{{jobs.0.1}}</tspan></text>
-<line x1="21" y1="206.5" x2="175" y2="206.5" stroke="#C4C4C4"/>
-<rect x="76" y="202" width="39" height="9" fill="white"/>
 <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Inconsolata" font-size="8" font-weight="bold" letter-spacing="0em" text-anchor="middle"><tspan x="98" y="208.871">{{jobs.1.1}}</tspan></text>
 <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Inconsolata" font-size="6" letter-spacing="0em"><tspan x="25" y="247.154">&#xa9; TwoPM Studios 2018</tspan></text>
 <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Inconsolata" font-size="6" letter-spacing="0em"><tspan x="150" y="247.154">Triage!</tspan></text>
 <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="14" font-weight="bold" letter-spacing="0em" text-anchor="middle"><tspan x="98" y="122.552">{{name}}</tspan></text>
 <line x1="48" y1="127.5" x2="149" y2="127.5" stroke="#C4C4C4"/>
-<circle cx="164" cy="31" r="11" fill="#36753B"/>
+<circle cx="164" cy="31" r="11" fill="{{special.1}}"/>
 <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Bitter" font-size="14" font-weight="bold" letter-spacing="0em" text-anchor="middle"><tspan x="164" y="36.26">{{triage}}</tspan></text>
-<path d="M55.7399 23.5413L52 12H145L140.705 23.7203C139.984 25.6902 138.109 27 136.011 27H60.4964C58.3289 27 56.4081 25.6034 55.7399 23.5413Z" fill="#36753B"/>
-<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inconsolata" font-size="8" font-weight="bold" letter-spacing="0em"><tspan x="76" y="22.8711">QUARANTINED</tspan></text>
-<path d="M28.8889 222.222C30.6002 222.222 32 220.822 32 219.111C32 217.4 30.6002 216 28.8889 216C27.1776 216 25.7778 217.4 25.7778 219.111C25.7778 220.822 27.1776 222.222 28.8889 222.222ZM28.8889 223C26.8278 223 25 224.05 25 226.111V230H32.7778V226.111C32.7778 224.05 30.9499 223 28.8889 223Z" fill="#2A74F6"/>
-<path d="M38.8889 222.222C40.6002 222.222 42 220.822 42 219.111C42 217.4 40.6002 216 38.8889 216C37.1776 216 35.7778 217.4 35.7778 219.111C35.7778 220.822 37.1776 222.222 38.8889 222.222ZM38.8889 223C36.8278 223 35 224.05 35 226.111V230H42.7778V226.111C42.7778 224.05 40.9499 223 38.8889 223Z" fill="black"/>
+<path d="M55.7399 23.5413L52 12H145L140.705 23.7203C139.984 25.6902 138.109 27 136.011 27H60.4964C58.3289 27 56.4081 25.6034 55.7399 23.5413Z" fill="{{special.1}}"/>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inconsolata" font-size="8" font-weight="bold" letter-spacing="0em" text-anchor="middle"><tspan x="98" y="22.8711">{{special.0}}</tspan></text>
 </g>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
