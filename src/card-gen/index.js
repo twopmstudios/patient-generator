@@ -29,12 +29,14 @@ program
         console.log(`Writing ${json.length} files...`);
 
         json.forEach(patient => {
-          console.info(`Rendering ${patient.name}...`);
+          console.info(`[Rendering] '${patient.name}'`);
           const output = Mustache.render(template, patient);
-          console.info(`Writing ${patient.name}...`);
+          console.info(`[Writing]   '${patient.name}'`);
           writeFile(path.join(outdir, patient.name + '.svg'), output);
-          console.info(`${patient.name} Complete!`);
+          console.info(`[Completed] '${patient.name}'`);
         });
+
+        console.log(`Wrote ${json.length} files!`);
 
       });
   });
