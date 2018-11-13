@@ -7,7 +7,7 @@ npm install
 # Generate data
 
 ```
-node patient_gen.js > data.json
+npm run patient-gen
 ```
 
 # Output SVG's
@@ -15,6 +15,13 @@ node patient_gen.js > data.json
 SVG Template files are constructed using the [mustache](https://github.com/janl/mustache.js/) templating syntax.
 
 ```
-mkdir ./out
-node ./bin/index.js ./data.json ./template.svg ./out
+npm run standard
+npm run special
+npm run qim
+```
+
+OR
+
+```
+npm run all
 ```
