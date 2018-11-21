@@ -1,4 +1,4 @@
-const { shuffle, WordPool } = require('../util');
+const { shuffle, WordPool, getRandomListEntry } = require('../util');
 const JobsPool = require('./jobs.json');
 
 const ROLES = ['A', 'B', 'C', 'D']
@@ -59,10 +59,6 @@ function findTasksForRole(role, previous) {
     }
   result = final.pop()
   return result
-}
-
-function getRandomListEntry(list) {
-  return list[Math.floor(Math.random()*list.length)]
 }
 
 function createJob() {
