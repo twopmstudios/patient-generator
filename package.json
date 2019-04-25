@@ -6,9 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "face": "mkdir -p ./out/faces && node ./src/card-gen/index.js ./data/faces.json ./card-templates/face.svg ./out/faces",
-    "standard": "mkdir -p ./out/standard && node ./src/card-gen/index.js ./data/standard.json ./card-templates/standard.svg ./out/standard",
-    "special": "mkdir -p ./out/special && node ./src/card-gen/index.js ./data/special.json ./card-templates/special.svg ./out/special",
-    "qim": "mkdir -p ./out/qim && node ./src/card-gen/index.js ./data/qim.json ./card-templates/qim.svg ./out/qim",
+    "standard": "mkdir -p ./out/standard && node ./src/card-gen/index.js ./data/standard.json ./card-templates/standard.svg ./data/faces ./out/standard",
+    "special": "mkdir -p ./out/special && node ./src/card-gen/index.js ./data/special.json ./card-templates/special.svg ./data/faces ./out/special",
+    "qim": "mkdir -p ./out/qim && node ./src/card-gen/index.js ./data/qim.json ./card-templates/qim.svg ./data/faces ./out/qim",
     "all": "concurrently \"npm run standard\" \"npm run special\" \"npm run qim\"",
     "patient-gen": "mkdir -p ./out/data && node ./src/patient-gen/index.js > ./data/patients.json",
     "face-gen": "mkdir -p ./out/data && node ./src/face-gen.js > ./data/faces.json"

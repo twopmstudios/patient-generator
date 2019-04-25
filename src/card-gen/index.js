@@ -9,10 +9,11 @@ const writeFile = util.promisify(fs.writeFile);
 
 program 
   .version('1.0.0')
-  .arguments('<data> <template> <outdir>')
-  .action((dataPath, templatePath, outdir) => {
+  .arguments('<data> <template> <facePath> <outdir>')
+  .action((dataPath, templatePath, facePath, outdir) => {
     console.log('data', dataPath);
     console.log('template', templatePath);
+    console.log('faces', facePath);
     console.log('outdir', outdir);
 
     readFile(dataPath)
@@ -31,6 +32,18 @@ program
         json.forEach((patient, idx) => {
           console.info(`[Rendering] '${idx}'`);
           const output = Mustache.render(template, patient);
+
+          if (patient.image) {
+            const inPath = path.join(facePath, patient.image);
+            const outPath = path.join(outdir, `faces`, patient.image);
+            console.info(`[Copying] '${inPath}'`);
+            fs.copyFileSync(
+              inPath,
+              outPath
+            );
+            console.info(`[Copied] '${outPath}'`);
+          }
+
           console.info(`[Writing]   '${idx}'`);
           writeFile(path.join(outdir, idx + '.svg'), output);
           console.info(`[Completed] '${idx}'`);
