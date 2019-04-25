@@ -25,7 +25,7 @@
 <line x1="48" y1="127.5" x2="149" y2="127.5" stroke="#C4C4C4"/>
 <circle cx="164" cy="31" r="11" fill="{{hex}}"/>
 <circle cx="164" cy="90" r="11" fill="white"/>
-<image x="58" y="0" width="40%" height="50%" xlink:href="faces/avataaars (1).svg"/>
+<image x="58" y="0" width="40%" height="50%" xlink:href="faces/{{image}}"/>
 <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Bitter" font-size="14" font-weight="bold" letter-spacing="0em" text-anchor="middle"><tspan x="164" y="36.26">{{triage}}</tspan></text>
 <path d="M166.5 86.1111C166.5 87.5461 165.324 88.7222 163.889 88.7222C162.454 88.7222 161.278 87.5461 161.278 86.1111C161.278 84.6762 162.454 83.5 163.889 83.5C165.324 83.5 166.5 84.6762 166.5 86.1111ZM160.5 93.1111C160.5 92.2494 160.873 91.6183 161.466 91.1869C162.074 90.744 162.935 90.5 163.889 90.5C164.842 90.5 165.703 90.744 166.312 91.1869C166.905 91.6183 167.278 92.2494 167.278 93.1111V96.5H160.5V93.1111Z" fill="white" stroke="black"/>
 </g>
