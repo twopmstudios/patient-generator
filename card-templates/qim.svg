@@ -1,0 +1,82 @@
+<svg width="196" height="269" viewBox="0 0 196 269" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Template Apr19" clip-path="url(#clip0)">
+<rect width="195.679" height="268.043" fill="white"/>
+<rect id="Rectangle" x="8" y="8" width="180" height="252" rx="16" stroke="{{special.1}}" stroke-width="16"/>
+<image x="58" y="-5" width="40%" height="50%" xlink:href="faces/{{image}}"/>
+<g id="Person">
+<circle id="Ellipse" cx="32" cy="33" r="11" fill="white"/>
+<g id="Any P">
+<path id="Vector" d="M34.5 29.1111C34.5 30.5461 33.324 31.7222 31.8889 31.7222C30.4538 31.7222 29.2778 30.5461 29.2778 29.1111C29.2778 27.6762 30.4538 26.5 31.8889 26.5C33.324 26.5 34.5 27.6762 34.5 29.1111ZM28.5 36.1111C28.5 35.2494 28.8731 34.6183 29.4658 34.1869C30.0743 33.744 30.9355 33.5 31.8889 33.5C32.8423 33.5 33.7034 33.744 34.312 34.1869C34.9047 34.6183 35.2778 35.2494 35.2778 36.1111V39.5H28.5V36.1111Z" fill="white" stroke="black"/>
+</g>
+</g>
+<text id="{{name}}" fill="{{special.1}}" xml:space="preserve" style="white-space: pre" font-family="Archivo" font-size="12" font-weight="bold" letter-spacing="0em" text-anchor="middle"><tspan x="98" y="116.536">{{name}}</tspan></text>
+<g id="Group">
+<text id="{{jobs.0.1}}" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inconsolata" font-size="8" font-weight="bold" letter-spacing="0em" text-anchor="middle"><tspan x="98" y="171.871">{{jobs.0.1}}</tspan></text>
+</g>
+<g id="Group_2">
+<text id="{{jobs.1.1}}" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inconsolata" font-size="8" font-weight="bold" letter-spacing="0em" text-anchor="middle"><tspan x="98" y="209.871">{{jobs.1.1}}</tspan></text>
+</g>
+<text id="{{jobs.0.0}}" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inconsolata" font-size="10" letter-spacing="0em" text-anchor="middle"><tspan x="98" y="153.59">{{jobs.0.0}}</tspan></text>
+<text id="{{jobs.1.0}}" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inconsolata" font-size="10" letter-spacing="0em" text-anchor="middle"><tspan x="98" y="191.59">{{jobs.1.0}}</tspan></text>
+<text id="{{jobs.2.0}}" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inconsolata" font-size="10" letter-spacing="0em" text-anchor="middle"><tspan x="98" y="229.59">{{jobs.2.0}}</tspan></text>
+<g id="Footer">
+<text id="&#194;&#169; TwoPM Studios 2019" fill="#8A8A8A" xml:space="preserve" style="white-space: pre" font-family="Archivo" font-size="6" font-weight="600" letter-spacing="0em"><tspan x="21" y="247.268">&#xa9; TwoPM Studios 2019</tspan></text>
+<text id="Night Shift!" fill="#8A8A8A" xml:space="preserve" style="white-space: pre" font-family="Archivo" font-size="6" font-weight="600" letter-spacing="0em"><tspan x="141.693" y="247.268">Night Shift!</tspan></text>
+</g>
+
+<g id="1">
+<circle id="Ellipse_2" cx="164" cy="32" r="11" fill="{{special.1}}"/>
+<text id="{{triage}}" fill="white" xml:space="preserve" style="white-space: pre" font-family="Archivo" font-size="14" font-weight="bold" letter-spacing="0em" text-anchor="middle"><tspan x="164" y="37.292">{{triage}}</tspan></text> 
+</g>
+<g id="TASK ONE">
+<path id="Vector_2" d="M29.1667 149.667C31.0002 149.667 32.5 148.167 32.5 146.333C32.5 144.5 31.0002 143 29.1667 143C27.3332 143 25.8333 144.5 25.8333 146.333C25.8333 148.167 27.3332 149.667 29.1667 149.667ZM29.1667 150.5C26.9584 150.5 25 151.625 25 153.833V158H33.3333V153.833C33.3333 151.625 31.3749 150.5 29.1667 150.5Z" fill="{{roles.0.1}}" stroke="{{roles.0.1}}"/>
+<g id="Group 2">
+<rect id="Rectangle 2" x="58" y="123" width="80" height="13" rx="6.5" fill="{{special.1}}"/>
+<text id="{{special.0}}" fill="white" xml:space="preserve" style="white-space: pre" font-family="Archivo" font-size="8" font-weight="bold" letter-spacing="0em" text-anchor="middle"><tspan x="98" y="132.024">{{special.0}}</tspan></text>
+</g>
+<path id="Vector_3" d="M39.1667 149.667C41.0002 149.667 42.5 148.167 42.5 146.333C42.5 144.5 41.0002 143 39.1667 143C37.3332 143 35.8333 144.5 35.8333 146.333C35.8333 148.167 37.3332 149.667 39.1667 149.667ZM39.1667 150.5C36.9584 150.5 35 151.625 35 153.833V158H43.3333V153.833C43.3333 151.625 41.3749 150.5 39.1667 150.5Z" fill="{{roles.0.0}}" stroke="{{roles.0.2}}"/>
+
+<path id="Vector_4" d="M159.167 149.667C161 149.667 162.5 148.167 162.5 146.333C162.5 144.5 161 143 159.167 143C157.333 143 155.833 144.5 155.833 146.333C155.833 148.167 157.333 149.667 159.167 149.667ZM159.167 150.5C156.958 150.5 155 151.625 155 153.833V158H163.333V153.833C163.333 151.625 161.375 150.5 159.167 150.5Z" fill="{{roles.0.0}}" stroke="{{roles.0.2}}"/>
+
+<path id="Vector_5" d="M169.167 149.667C171 149.667 172.5 148.167 172.5 146.333C172.5 144.5 171 143 169.167 143C167.333 143 165.833 144.5 165.833 146.333C165.833 148.167 167.333 149.667 169.167 149.667ZM169.167 150.5C166.958 150.5 165 151.625 165 153.833V158H173.333V153.833C173.333 151.625 171.375 150.5 169.167 150.5Z" fill="{{roles.0.1}}" stroke="{{roles.0.1}}"/>
+
+</g>
+
+<g id="TASK TWO">
+<path id="Vector_6" d="M29.1667 187.667C31.0002 187.667 32.5 186.167 32.5 184.333C32.5 182.5 31.0002 181 29.1667 181C27.3332 181 25.8333 182.5 25.8333 184.333C25.8333 186.167 27.3332 187.667 29.1667 187.667ZM29.1667 188.5C26.9584 188.5 25 189.625 25 191.833V196H33.3333V191.833C33.3333 189.625 31.3749 188.5 29.1667 188.5Z" fill="{{roles.1.1}}" stroke="{{roles.1.1}}"/>
+
+<path id="Vector_7" d="M39.1667 187.667C41.0002 187.667 42.5 186.167 42.5 184.333C42.5 182.5 41.0002 181 39.1667 181C37.3332 181 35.8333 182.5 35.8333 184.333C35.8333 186.167 37.3332 187.667 39.1667 187.667ZM39.1667 188.5C36.9584 188.5 35 189.625 35 191.833V196H43.3333V191.833C43.3333 189.625 41.3749 188.5 39.1667 188.5Z" fill="{{roles.1.0}}" stroke="{{roles.1.2}}"/>
+
+<path id="Vector_8" d="M159.167 187.667C161 187.667 162.5 186.167 162.5 184.333C162.5 182.5 161 181 159.167 181C157.333 181 155.833 182.5 155.833 184.333C155.833 186.167 157.333 187.667 159.167 187.667ZM159.167 188.5C156.958 188.5 155 189.625 155 191.833V196H163.333V191.833C163.333 189.625 161.375 188.5 159.167 188.5Z" fill="{{roles.1.0}}" stroke="{{roles.1.2}}"/>
+
+<path id="Vector_9" d="M169.167 187.667C171 187.667 172.5 186.167 172.5 184.333C172.5 182.5 171 181 169.167 181C167.333 181 165.833 182.5 165.833 184.333C165.833 186.167 167.333 187.667 169.167 187.667ZM169.167 188.5C166.958 188.5 165 189.625 165 191.833V196H173.333V191.833C173.333 189.625 171.375 188.5 169.167 188.5Z" fill="{{roles.1.1}}" stroke="{{roles.1.1}}"/>
+</g>
+
+<g id="TASK THREE">
+<path id="Vector_10" d="M29.1667 225.667C31.0002 225.667 32.5 224.167 32.5 222.333C32.5 220.5 31.0002 219 29.1667 219C27.3332 219 25.8333 220.5 25.8333 222.333C25.8333 224.167 27.3332 225.667 29.1667 225.667ZM29.1667 226.5C26.9584 226.5 25 227.625 25 229.833V234H33.3333V229.833C33.3333 227.625 31.3749 226.5 29.1667 226.5Z" fill="{{roles.2.1}}" stroke="{{roles.2.1}}"/>
+
+<path id="Vector_11" d="M39.1667 225.667C41.0002 225.667 42.5 224.167 42.5 222.333C42.5 220.5 41.0002 219 39.1667 219C37.3332 219 35.8333 220.5 35.8333 222.333C35.8333 224.167 37.3332 225.667 39.1667 225.667ZM39.1667 226.5C36.9584 226.5 35 227.625 35 229.833V234H43.3333V229.833C43.3333 227.625 41.3749 226.5 39.1667 226.5Z" fill="{{roles.2.0}}" stroke="{{roles.2.2}}"/>
+
+<path id="Vector_12" d="M159.167 226.667C161 226.667 162.5 225.167 162.5 223.333C162.5 221.5 161 220 159.167 220C157.333 220 155.833 221.5 155.833 223.333C155.833 225.167 157.333 226.667 159.167 226.667ZM159.167 227.5C156.958 227.5 155 228.625 155 230.833V235H163.333V230.833C163.333 228.625 161.375 227.5 159.167 227.5Z" fill="{{roles.2.0}}" stroke="{{roles.2.2}}"/>
+
+<path id="Vector_13" d="M169.167 226.667C171 226.667 172.5 225.167 172.5 223.333C172.5 221.5 171 220 169.167 220C167.333 220 165.833 221.5 165.833 223.333C165.833 225.167 167.333 226.667 169.167 226.667ZM169.167 227.5C166.958 227.5 165 228.625 165 230.833V235H173.333V230.833C173.333 228.625 171.375 227.5 169.167 227.5Z" fill="{{roles.2.1}}" stroke="{{roles.2.1}}"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_d" x="75.2494" y="49.7714" width="44.9771" height="22.0571" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+<feOffset dy="2"/>
+<feGaussianBlur stdDeviation="2"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+<clipPath id="clip0">
+<rect width="195.679" height="268.043" fill="white"/>
+</clipPath>
+<clipPath id="clip1">
+<rect width="77.4759" height="82" fill="white" transform="translate(59 21)"/>
+</clipPath>
+</defs>
+</svg>
