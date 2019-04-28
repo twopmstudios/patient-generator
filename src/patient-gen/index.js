@@ -6,7 +6,7 @@ const MIN_JOBS = 1
 const MAX_JOBS = 3
 const TRIAGE_CATEGORIES = ['1', '2', '3', '4', '5']
 const TRIAGE_COLORS = ['#FFFFFF', '#000000', '#DE4768', '#F2A040', '#0AB45A', '#2A74F6']
-const ROLE_COLORS = {'ABCD':TRIAGE_COLORS[0], 'A':TRIAGE_COLORS[1], 'B':TRIAGE_COLORS[2], 'C':TRIAGE_COLORS[4], 'D':TRIAGE_COLORS[5]}
+const ROLE_COLORS = {'ABCD':TRIAGE_COLORS[0], 'A':TRIAGE_COLORS[2], 'B':TRIAGE_COLORS[1], 'C':TRIAGE_COLORS[4], 'D':TRIAGE_COLORS[5]}
 const JOINS = ['~~~', ' THEN', ' AND']
 
 const CARD_COUNT = 48 // 48 standard, 2 Quarantine, 2 Monitored, 2 Isolated (all triage 5)
