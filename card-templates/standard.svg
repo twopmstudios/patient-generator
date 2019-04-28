@@ -25,7 +25,7 @@
 <text id="&#194;&#169; TwoPM Studios 2019" fill="#8A8A8A" xml:space="preserve" style="white-space: pre" font-family="Archivo" font-size="6" font-weight="600" letter-spacing="0em"><tspan x="21" y="247.268">&#xa9; TwoPM Studios 2019</tspan></text>
 <text id="Night Shift!" fill="#8A8A8A" xml:space="preserve" style="white-space: pre" font-family="Archivo" font-size="6" font-weight="600" letter-spacing="0em"><tspan x="141.693" y="247.268">Night Shift!</tspan></text>
 </g>
-<text id="{{catchphrase}}" fill="#767676" xml:space="preserve" style="white-space: pre" font-family="Archivo Narrow" font-size="7" font-style="italic" letter-spacing="0em" text-anchor="middle"><tspan x="98" y="127.838">&#x201c;You gotta help me Doc!&#x201d;</tspan></text>
+<text id="{{catchphrase}}" fill="#767676" xml:space="preserve" style="white-space: pre" font-family="Archivo Narrow" font-size="7" font-style="italic" letter-spacing="0em" text-anchor="middle"><tspan x="98" y="127.838">&#x201c;{{phrase}}&#x201d;</tspan></text>
 <g id="1">
 <circle id="Ellipse_2" cx="164" cy="32" r="11" fill="{{hex}}"/>
 <text id="{{triage}}" fill="white" xml:space="preserve" style="white-space: pre" font-family="Archivo" font-size="14" font-weight="bold" letter-spacing="0em" text-anchor="middle"><tspan x="164" y="37.292">{{triage}}</tspan></text> 
