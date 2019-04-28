@@ -18,8 +18,7 @@
 <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Inconsolata" font-size="10" letter-spacing="0em" text-anchor="middle"><tspan x="98" y="189">{{jobs.4}}</tspan></text>
 <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Inconsolata" font-size="10" letter-spacing="0em" text-anchor="middle"><tspan x="98" y="198">{{jobs.5}}</tspan></text>
 <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Inconsolata" font-size="10" letter-spacing="0em" text-anchor="middle"><tspan x="98" y="207">{{jobs.6}}</tspan></text>
-
-
+<image x="58" y="-5" width="40%" height="50%" xlink:href="faces/{{image}}"/>
 </g>
 <defs>
 <filter id="filter0_d" x="76.7677" y="36.8857" width="42.2715" height="21.0286" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
