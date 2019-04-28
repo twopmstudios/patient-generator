@@ -9,11 +9,11 @@ const writeFile = util.promisify(fs.writeFile);
 
 program 
   .version('1.0.0')
-  .arguments('<data> <template> <facePath> <outdir>')
-  .action((dataPath, templatePath, facePath, outdir) => {
+  .arguments('<data> <template> <imagePath> <outdir>')
+  .action((dataPath, templatePath, imagePath, outdir) => {
     console.log('data', dataPath);
     console.log('template', templatePath);
-    console.log('faces', facePath);
+    console.log('images', imagePath);
     console.log('outdir', outdir);
 
     readFile(dataPath)
@@ -34,8 +34,8 @@ program
           const output = Mustache.render(template, patient);
 
           if (patient.image) {
-            const inPath = path.join(facePath, patient.image);
-            const outPath = path.join(outdir, `faces`, patient.image);
+            const inPath = path.join(imagePath, patient.image);
+            const outPath = path.join(outdir, `images`, patient.image);
             console.info(`[Copying] '${inPath}'`);
             fs.copyFileSync(
               inPath,
