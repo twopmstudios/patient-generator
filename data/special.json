@@ -15,4 +15,4 @@
  {"name":"Friday Night", "triage":"4", "jobs":["Draw one extra patient each","turn while this card remains","in play. Discard at bay zero"], "avatar":"character (2).svg"},
  {"name":"Influenza Season", "triage":"1", "jobs":["Move every patient up a bay","then discard this card."], "avatar":"character (3).svg"},
  {"name":"Hypotensive Crisis", "triage":"1", "jobs":["Move one patient to bay one","from bay 3, 4 or 5. Then","discard this card."], "avatar":"character (0).svg"},
- {"name":"Fever Spike", "triage":"2", "jobs":["Move one patient to bay two","from bay 3, 4 or 5. Then","discard this card."], "avatar":"character (1).svg"}
+ {"name":"Fever Spike", "triage":"2", "jobs":["Move one patient to bay two","from bay 3, 4 or 5. Then","discard this card."], "avatar":"character (1).svg"}]
