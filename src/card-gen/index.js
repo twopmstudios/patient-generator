@@ -31,18 +31,15 @@ program
 
         json.forEach((patient, idx) => {
           console.info(`[Rendering] '${idx}'`);
-          const output = Mustache.render(template, patient);
-
+          
           if (patient.image) {
             const inPath = path.join(imagePath, patient.image);
-            const outPath = path.join(outdir, `images`, patient.image);
-            console.info(`[Copying] '${inPath}'`);
-            fs.copyFileSync(
-              inPath,
-              outPath
-            );
-            console.info(`[Copied] '${outPath}'`);
+
+            console.info(`[Inlining] '${inPath}'`);
+            patient.image = fs.readFileSync(inPath, 'utf8');
           }
+
+          const output = Mustache.render(template, patient);
 
           console.info(`[Writing]   '${idx}'`);
           writeFile(path.join(outdir, idx + '.svg'), output);

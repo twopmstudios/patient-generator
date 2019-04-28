@@ -2,7 +2,9 @@
 <g id="Template Apr19" clip-path="url(#clip0)">
 <rect width="195.679" height="268.043" fill="white"/>
 <rect id="Rectangle" x="8" y="8" width="180" height="252" rx="16" stroke="{{special.1}}" stroke-width="16"/>
-<image x="58" y="-5" width="40%" height="50%" xlink:href="images/{{image}}"/>
+<g transform="translate(58,20) scale(0.3, 0.3)">
+  {{{image}}}
+</g>
 <g id="Person">
 <circle id="Ellipse" cx="32" cy="33" r="11" fill="white"/>
 <g id="Any P">
