@@ -11,7 +11,7 @@
 <path id="Vector" d="M34.5 29.1111C34.5 30.5461 33.324 31.7222 31.8889 31.7222C30.4538 31.7222 29.2778 30.5461 29.2778 29.1111C29.2778 27.6762 30.4538 26.5 31.8889 26.5C33.324 26.5 34.5 27.6762 34.5 29.1111ZM28.5 36.1111C28.5 35.2494 28.8731 34.6183 29.4658 34.1869C30.0743 33.744 30.9355 33.5 31.8889 33.5C32.8423 33.5 33.7034 33.744 34.312 34.1869C34.9047 34.6183 35.2778 35.2494 35.2778 36.1111V39.5H28.5V36.1111Z" fill="white" stroke="black"/>
 </g>
 </g>
-<text id="{{name}}" fill="{{hex}}" xml:space="preserve" style="white-space: pre" font-family="Archivo" font-size="12" font-weight="bold" letter-spacing="0em" text-anchor="middle"><tspan x="98" y="116.536">{{name}}</tspan></text>
+<text id="{{name}}" fill="{{hex}}" xml:space="preserve" style="white-space: pre" font-family="Archivo Medium" font-size="12" font-weight="bold" letter-spacing="0em" text-anchor="middle"><tspan x="98" y="116.536">{{name}}</tspan></text>
 <g id="Group">
 <text id="{{jobs.0.1}}" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inconsolata" font-size="8" font-weight="bold" letter-spacing="0em" text-anchor="middle"><tspan x="98" y="171.871">{{jobs.0.1}}</tspan></text>
 </g>
@@ -28,7 +28,7 @@
 <text id="{{catchphrase}}" fill="#767676" xml:space="preserve" style="white-space: pre" font-family="Archivo Narrow" font-size="7" font-style="italic" letter-spacing="0em" text-anchor="middle"><tspan x="98" y="127.838">&#x201c;{{phrase}}&#x201d;</tspan></text>
 <g id="1">
 <circle id="Ellipse_2" cx="164" cy="32" r="11" fill="{{hex}}"/>
-<text id="{{triage}}" fill="white" xml:space="preserve" style="white-space: pre" font-family="Archivo" font-size="14" font-weight="bold" letter-spacing="0em" text-anchor="middle"><tspan x="164" y="37.292">{{triage}}</tspan></text> 
+<text id="{{triage}}" fill="white" xml:space="preserve" style="white-space: pre" font-family="Archivo Medium" font-size="14" letter-spacing="0em" text-anchor="middle"><tspan x="164" y="37">{{triage}}</tspan></text> 
 </g>
 <g id="TASK ONE">
 <path id="Vector_2" d="M29.1667 149.667C31.0002 149.667 32.5 148.167 32.5 146.333C32.5 144.5 31.0002 143 29.1667 143C27.3332 143 25.8333 144.5 25.8333 146.333C25.8333 148.167 27.3332 149.667 29.1667 149.667ZM29.1667 150.5C26.9584 150.5 25 151.625 25 153.833V158H33.3333V153.833C33.3333 151.625 31.3749 150.5 29.1667 150.5Z" fill="{{roles.0.1}}" stroke="{{roles.0.1}}"/>
